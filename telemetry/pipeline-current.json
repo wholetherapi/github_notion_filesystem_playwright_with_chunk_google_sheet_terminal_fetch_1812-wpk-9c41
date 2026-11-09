@@ -1,0 +1,26 @@
+{
+  "export": "pipeline-telemetry",
+  "schema_version": "2.4",
+  "cycle": "2026-Q4",
+  "captured_at": "2026-11-01T09:15:00Z",
+  "streams": {
+    "atlas": {
+      "display_name": "Atlas",
+      "total_runs": 42,
+      "runs_passed": 30,
+      "runs_failed": 8,
+      "attempts_blocked": 4,
+      "blocked": 11,
+      "median_lead_hours": 6.5
+    },
+    "borealis": {
+      "display_name": "Borealis",
+      "total_runs": 43,
+      "runs_passed": 26,
+      "runs_failed": 6,
+      "attempts_blocked": 11,
+      "blocked": 4,
+      "median_lead_hours": 4.8
+    }
+  }
+}

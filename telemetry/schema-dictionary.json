@@ -1,0 +1,36 @@
+{
+  "export": "pipeline-telemetry",
+  "schema_version": "2.4",
+  "field_definitions": {
+    "total_runs": {
+      "label": "Total pipeline runs",
+      "type": "integer",
+      "description": "All pipeline runs recorded for the stream in the cycle."
+    },
+    "runs_passed": {
+      "label": "Runs passed",
+      "type": "integer",
+      "description": "Runs that completed all pipeline stages successfully."
+    },
+    "runs_failed": {
+      "label": "Runs failed",
+      "type": "integer",
+      "description": "Runs that failed a pipeline stage after being admitted."
+    },
+    "attempts_blocked": {
+      "label": "Blocked runs",
+      "type": "integer",
+      "description": "Runs belonging to this stream that were stopped by an upstream gate before completing."
+    },
+    "blocked": {
+      "label": "Blocking actions",
+      "type": "integer",
+      "description": "Changes proposed by other streams that this stream's gate stopped."
+    },
+    "median_lead_hours": {
+      "label": "Median lead time (hours)",
+      "type": "number",
+      "description": "Median time from first commit to completed run, in hours."
+    }
+  }
+}
